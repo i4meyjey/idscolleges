@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+body{
+    background-image: url(/images/hero_bg.jpeg);
+}
+
+
+
+/*---
+li, a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    background-image: url(/images/hero_bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    background: green;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border-radius: 5%;
+}
+.logo{
+    cursor: pointer;
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.logo img{
+    margin-right: 10px;
+}
+.nav_l{
+    list-style: none;
+}
+.nav_l li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.name{
+    color: #fff;
+}
+.nav_l li a{
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.nav_l li a:hover{
+    color: rgba(0, 255, 0, 0.563);
+}

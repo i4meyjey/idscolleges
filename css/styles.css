@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header{
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header{
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+	transition: 0.3s ease background-color;
+}
+#header .nav-bar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+
+/**
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.5), rgba(255, 255, 0, 0.5)), url("../images/hero_backg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 10%;
+    background: rgba(0, 128, 0, 0.796);
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border-radius: 5%;
+}
+.logo{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.logo img{
+    margin-right: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: yellow;
+    transition: all 0.3s ease 0s;
+}
+.tagline{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tagline h1 p button{
+    text-align: center;
+}
+.tagline p{
+    padding-bottom: 5px;
+}
+button{
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    height: 36px;
+    width: 200px;
+    border-radius: 10px;
+    font-weight:bold;
+    font-size: 15px;
+}
+button:hover{
+    color: rgba(0, 255, 0, 0.7);
+    transition: all 0.3s ease 0s;
+}
